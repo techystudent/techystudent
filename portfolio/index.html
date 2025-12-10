@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechyStudent - AI Homework Solver for Math, Physics, Chemistry. Get step-by-step solutions.">
+    <meta name="keywords" content="math solver, homework AI tool, step by step solution, student solver">
+    <title>TechyStudent – AI Homework Solver</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- MathJax for formula rendering -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOccupationalProgram",
+      "name": "TechyStudent - AI Homework Solver",
+      "description": "AI-powered homework solver for Math, Physics, Chemistry with step-by-step solutions",
+      "provider": {
+        "@type": "Organization",
+        "name": "TechyStudent"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <p>We use cookies to improve your experience. By using our website, you agree to our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+        <button id="acceptCookies">Accept</button>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>🧠 TechyStudent – AI Homework Solver</h1>
+            <p>Get step-by-step solutions for Math, Physics, Chemistry & Word Problems</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- AdSense placeholder above the fold (non-intrusive) -->
+        <div class="adsense-placeholder top-ad">
+            <!-- Ad Unit ID: ca-pub-XXXXXXXXXXXXXXXX/top-banner -->
+        </div>
+
+        <!-- Question Input Section -->
+        <section class="question-input-section">
+            <h2>📸 Upload or Type Your Question</h2>
+            
+            <!-- Language Selector -->
+            <div class="language-selector">
+                <label for="language">Language:</label>
+                <select id="language">
+                    <option value="en">English</option>
+                    <option value="hi">Hindi</option>
+                </select>
+            </div>
+            
+            <!-- Image Upload -->
+            <div class="upload-area" id="uploadArea">
+                <input type="file" id="imageInput" accept="image/*" hidden>
+                <label for="imageInput" class="upload-label">
+                    <span>📷 Upload Image (JPG/PNG/WEBP)</span>
+                    <p>Click or drag an image here</p>
+                </label>
+                <div id="previewContainer" class="preview-container"></div>
+            </div>
+            
+            <!-- Manual Text Input -->
+            <div class="text-input-area">
+                <textarea id="questionText" placeholder="Or type your question here..."></textarea>
+                <button id="solveBtn">🧮 Solve Question</button>
+            </div>
+        </section>
+
+        <!-- Solution Display Section -->
+        <section class="solution-section" id="solutionSection" style="display: none;">
+            <h2>✅ Solution</h2>
+            
+            <!-- AdSense placeholder between steps -->
+            <div class="adsense-placeholder step-ad">
+                <!-- Ad Unit ID: ca-pub-XXXXXXXXXXXXXXXX/middle-content -->
+            </div>
+            
+            <div class="solution-content" id="solutionContent">
+                <!-- Solution will be displayed here -->
+            </div>
+            
+            <div class="solution-actions">
+                <button id="copySolution">📋 Copy Solution</button>
+                <button id="downloadPDF">📄 Download as PDF</button>
+                <button id="shareLink">🔗 Share Solution</button>
+            </div>
+        </section>
+
+        <!-- AdSense placeholder below results -->
+        <div class="adsense-placeholder bottom-ad">
+            <!-- Ad Unit ID: ca-pub-XXXXXXXXXXXXXXXX/bottom-banner -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 TechyStudent. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- AI Content Disclaimer -->
+    <div class="ai-disclaimer">
+        <p>This tool provides AI-generated solutions for educational support only. Students should verify steps before submitting homework.</p>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4/dist/tesseract.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
